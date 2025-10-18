@@ -19,7 +19,16 @@ body{
   padding:16px 20px;background:rgba(255,255,255,0.03);backdrop-filter:blur(4px)
 }
 .brand{display:flex;gap:12px;align-items:center}
-.logo{width:44px;height:44px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;color:#051018}
+.logo-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+  box-shadow: 0 0 10px rgba(0, 216, 97, 0.3);
+}
+
 .brand-title{font-weight:800}
 .brand-sub{font-size:12px;color:var(--muted)}
 .nav a{color:var(--text);text-decoration:none;margin-left:16px;font-weight:600}
