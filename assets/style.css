@@ -20,13 +20,13 @@ body{
 }
 .brand{display:flex;gap:12px;align-items:center}
 .logo-img {
-  width: 150px;  
-  height: 150px;
-  border-radius: 14px;
+  width: clamp(60px, 6vw, 90px);
+  height: clamp(60px, 6vw, 90px);
+  border-radius: 12px;
   object-fit: cover;
-  display: block;
-  box-shadow: 0 0 12px rgba(0, 216, 97, 0.25);
+  box-shadow: 0 0 14px rgba(0, 216, 97, 0.25);
 }
+
 
 
 .brand-title{font-weight:800}
