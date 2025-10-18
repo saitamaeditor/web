@@ -4,13 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SaitamaEditor — Inicio</title>
-  <meta name="description" content="SaitamaEditor — Editor de vídeo: Shorts, TikTok, YouTube y directos." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/style.css" />
-  <meta property="og:title" content="SaitamaEditor — Editor de vídeo" />
-  <meta property="og:description" content="Shorts, TikTok, YouTube y directos." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="SaitamaEditor — Editor de vídeo de Valencia, con 3 años de experiencia. Edición para Shorts, TikTok, YouTube y directos." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="brand">
@@ -21,53 +19,67 @@
       </div>
     </div>
     <nav aria-label="Navegación principal" class="nav">
-      <a href="index/" aria-current="page">Inicio</a>
-      <a href="servicios/">Servicios</a>
-      <a href="contacto/">Contacto</a>
+      <a href="/" aria-current="page">Inicio</a>
+      <a href="/servicios/">Servicios</a>
+      <a href="/contacto/">Contacto</a>
     </nav>
   </header>
 
   <main class="container">
-    <section class="hero card">
-      <div class="hero-col">
-        <h1>SaitamaEditor</h1>
-        <p class="lead">Editor de vídeo con 3 años de experiencia, 27 años, desde Valencia. Ritmo, narrativa y optimización para redes.</p>
-        <ul class="info-list" aria-label="Información sobre SaitamaEditor">
-          <li><strong>Edad:</strong> 27 años</li>
-          <li><strong>Ubicación:</strong> Valencia</li>
-          <li><strong>Experiencia:</strong> Editor desde hace 3 años</li>
-        </ul>
-        <div class="mt">
-          <a class="btn" href="servicios.html">Ver servicios y precios</a>
-        </div>
-        <p class="muted small mt"><strong>Especialidades:</strong> Shorts, TikTok, vídeos de YouTube, edición de directos y clips.</p>
-      </div>
+    <section class="card">
+      <h1 class="mt0">Sobre mí</h1>
+      <p class="lead">
+        👋 Hola, soy <strong>SaitamaEditor</strong>, un editor de vídeo con <strong>3 años de experiencia profesional</strong>.
+        Tengo <strong>27 años</strong> y soy de <strong>Valencia</strong>.  
+        Mi pasión es convertir ideas en vídeos con ritmo, emoción y un acabado profesional,
+        ya sea para <em>YouTube</em>, <em>TikTok</em>, <em>Shorts</em> o incluso <em>directos</em>.
+      </p>
 
-      <aside class="aside card">
-        <h3 class="mt0">Resumen rápido</h3>
-        <div class="services-summary">
-          <div class="service-pill"><span>Shorts</span><strong>5€</strong></div>
-          <div class="service-pill"><span>TikTok</span><strong>5€</strong></div>
-          <div class="service-pill"><span>Vídeos YouTube</span><strong>10€</strong></div>
-          <div class="service-pill"><span>Directos</span><strong>15€</strong></div>
-        </div>
-        <div class="mt">
-          <a class="btn" href="contacto.html">Contactar por WhatsApp</a>
-        </div>
-      </aside>
+      <p>
+        A lo largo de estos años he trabajado con <strong>creadores de contenido, marcas y streamers</strong>,
+        ayudándoles a construir una identidad visual que destaque.  
+        Me especializo en <strong>montaje rápido</strong>, <strong>transiciones limpias</strong> y <strong>efectos sincronizados con música</strong>.
+      </p>
+
+      <p>
+        Si quieres dar el salto en la calidad de tus vídeos, estás en el lugar adecuado.
+        Mira algunos ejemplos de mi estilo justo a continuación ⬇️
+      </p>
     </section>
 
-    <section class="card mt" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title" class="mt0">Muestra de trabajo</h2>
-      <p class="lead">Escríbeme por WhatsApp con tu referencia y te paso ejemplos y presupuesto según duración y requisitos.</p>
+    <section class="card mt" aria-labelledby="videos-title">
+      <h2 id="videos-title" class="mt0">Ejemplos de edición</h2>
+      <p class="muted">Aquí puedes ver tres muestras de mi estilo de edición, ritmo y narrativa visual:</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:16px;">
+        <div class="video-embed">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/vSyhyYHpBgs" 
+            title="Ejemplo de edición 1" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-embed">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/Tmz3h_DB8z8"
+            title="Ejemplo de edición 2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-embed">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/_ipo0SkTehU"
+            title="Ejemplo de edición 3" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="mt center">
+        <a class="btn" href="/contacto/">Contactar por WhatsApp</a>
+      </div>
     </section>
   </main>
 
+  <!-- Pie -->
   <footer class="footer">
-    © <span id="year"></span> SaitamaEditor — Hecho con pasión por la edición. ·
-    <a href="contacto.html">Contacto</a>
+    © <span id="year"></span> SaitamaEditor — Creando historias en vídeo desde Valencia.
   </footer>
 
-  <script src="assets/site.js"></script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
