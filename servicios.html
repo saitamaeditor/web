@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SaitamaEditor - Servicios</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="page">
+  <header class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">SaitamaEditor</a>
+      <ul class="menu">
+        <li><a href="index.html" data-transition>Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="servicio">
+      <h1>Servicios</h1>
+      <div class="card">
+        <h2>Edición de vídeos de YouTube</h2>
+
+        <!-- Logo YouTube en SVG; clic abre email -->
+        <a href="mailto:ejemplo@ejemplo.com" class="youtube-link" aria-label="Contactar por email">
+          <svg class="yt" viewBox="0 0 24 24" role="img" aria-labelledby="ytTitle ytDesc">
+            <title id="ytTitle">YouTube</title>
+            <desc id="ytDesc">Logo de YouTube</desc>
+            <rect x="1" y="4" rx="4" width="22" height="16" class="yt-bg"/>
+            <path d="M10 9.5v5l5-2.5-5-2.5z" class="yt-play"/>
+          </svg>
+        </a>
+        <p class="hint">Clic en el logo para contactar</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> SaitamaEditor</p>
+  </footer>
+
+  <script src="transition.js" defer></script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>

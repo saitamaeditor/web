@@ -1,0 +1,66 @@
+:root{
+  --azul:#1e3a8a;        /* azul oscuro */
+  --azul-claro:#2563eb;  /* acento */
+  --negro:#0a0a0a;
+  --blanco:#ffffff;
+}
+
+/* Reset + base */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:var(--blanco);background:var(--negro);line-height:1.6}
+
+/* Transiciones de página */
+.page{opacity:0}
+.page.is-visible{opacity:1;transition:opacity .35s ease}
+.page.is-exiting{opacity:0;transition:opacity .25s ease}
+/* Respeto accesibilidad */
+@media (prefers-reduced-motion: reduce){
+  .page,.page.is-visible,.page.is-exiting{transition:none!important}
+}
+
+/* Header fijo */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  background:linear-gradient(180deg,var(--azul),#102457);
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+.nav-container{
+  display:flex; align-items:center; justify-content:space-between;
+  max-width:1100px; margin:0 auto; padding:14px 20px;
+}
+.logo{font-weight:700; color:var(--blanco); text-decoration:none; letter-spacing:.2px}
+.menu{display:flex; gap:20px; list-style:none; margin:0; padding:0}
+.menu a{color:var(--blanco); text-decoration:none; font-weight:600; opacity:.95}
+.menu a:hover{color:var(--azul-claro)}
+.menu a.active{color:var(--azul-claro); text-decoration:underline}
+
+/* Compensar header fijo */
+.content{max-width:900px; margin:100px auto 60px; padding:0 20px; text-align:center}
+
+/* Titulares */
+h1,h2{color:var(--azul-claro); margin:0 0 12px}
+
+/* Card servicios */
+.card{
+  background:var(--blanco); color:var(--negro);
+  border-radius:14px; padding:28px; margin-top:24px;
+  box-shadow:0 10px 24px rgba(0,0,0,.25);
+}
+.hint{color:#374151; margin-top:6px}
+
+/* Logo YouTube */
+.yt{width:96px; height:96px; display:block; margin:10px auto}
+.yt-bg{fill:#ff2d2d}
+.yt-play{fill:#fff}
+.youtube-link{display:inline-block; transition:transform .2s ease}
+.youtube-link:hover{transform:scale(1.05)}
+
+/* Footer */
+.footer{background:#0d1730; text-align:center; padding:18px 12px; border-top:1px solid rgba(255,255,255,.08); color:#d7e2ff}
+
+/* Responsive */
+@media (max-width:640px){
+  .menu{gap:14px}
+  .content{margin:92px auto 50px}
+}
