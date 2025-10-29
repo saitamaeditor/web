@@ -66,6 +66,19 @@ body.page::before {
   letter-spacing: .5px;
 }
 
+.logo img {
+  height: 38px;           /* ajusta según el tamaño que quieras */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.06); /* pequeño efecto al pasar el ratón */
+}
+
+
 .menu {
   list-style: none;
   display: flex;
@@ -214,3 +227,4 @@ main.content {
   cursor: default;
   text-decoration: none;
 }
+
