@@ -232,3 +232,10 @@ main.content {
   opacity: 1;
   transition: opacity .4s ease;
 }
+
+.menu span.active {
+  color: #4ea5ff; /* el azul que usas en enlaces activos */
+  font-weight: 600;
+  cursor: default;
+  text-decoration: none;
+}
