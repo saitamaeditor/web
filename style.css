@@ -34,11 +34,17 @@ body.page::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: radial-gradient(1200px 500px at 50% -10%, rgba(37,99,235,.18), transparent),
-              linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
   z-index: 0;
   pointer-events: none;
+
+  /* Fondo base oscuro + blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* Capa de color para mejorar contraste */
+  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.6));
 }
+
 
 .nav {
   background: linear-gradient(180deg, #0a1a3d, #071630);
@@ -227,5 +233,6 @@ main.content {
   cursor: default;
   text-decoration: none;
 }
+
 
 
